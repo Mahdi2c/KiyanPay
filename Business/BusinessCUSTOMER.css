@@ -1,0 +1,76 @@
+/* Customers */
+.CustomerTitle{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 400%;
+  line-height: 104px;
+  overflow-x: hidden;
+  margin-left: 64%;
+  letter-spacing: 0.05em;
+  font-weight: bolder;
+  border: solid 2pt white;
+  color: #266759;
+  width: 40%;
+  margin-top: 7em;
+}
+
+.GraphImg{
+  position:relative;
+  left: 10%;
+  top: -42%;
+  opacity: 0.9;
+  z-index: 0;
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+}
+
+.GraphTxt{
+  overflow-x: hidden;
+  width: 30em;
+  border: solid 2pt #EBA048;
+  border-radius: 50px;
+  position: relative;
+  z-index: 5;
+  background: white;
+  left: 10em;
+  box-shadow: 1px 4px 4px rgba(0, 60, 60, 0.15);
+  padding: 10px;
+  bottom: 0em;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 105%;
+  line-height: 52px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #266759;
+  font-weight: bold;
+  opacity: 0.95;
+  top:-50%;
+}
+
+.GraphSecondTxt{
+  font-style: normal;
+  font-weight: normal;
+  line-height: 52px;
+  overflow-x: hidden;
+  letter-spacing: 0.05em;
+  color: #266759;
+  position: relative;
+  top: 6em;
+  font-size: 110%;
+  width: 37%;
+  left: 28%;
+  min-width: 20em;
+  margin-left: 2em;
+}
+
+.LearnMore{
+  position: relative;
+  top: 22%;
+  overflow-x: hidden;
+  color: #EBA048;
+  left: 32%;
+  font-size: 1em;
+  font-weight: bold;
+}

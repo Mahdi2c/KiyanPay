@@ -1,0 +1,85 @@
+/* Home page */
+.AirplaneBackground{
+    position: relative;
+    height: 120vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(Airplane.png);
+    zoom: 1.1;
+    box-shadow: 0px 4px 4px rgba(0, 0, 60, 0.15);
+    margin-top: -3%;
+    overflow-x: hidden;
+}
+
+.AirplaneBackground::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    overflow-x: hidden;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(297, 238, 213 ,0.65); /* 255, 255, 255,0.5 between this and the current*/
+}
+
+.BigTitle{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 250%;
+  line-height: 123px;
+  text-align: center;
+  overflow-x: hidden;
+  color: #114137;
+  opacity:0.99;
+  font-weight: bold;
+}
+
+.UnderBigTitle{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 120%;
+  line-height: 65px;
+  overflow-x: hidden;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: rgba(17, 65, 55, 0.8);
+  opacity: 0.9;
+  margin-bottom: 15%;
+  opacity:0.99;
+}
+
+.StartToday{
+  margin: auto;
+  border-radius: 50px;
+  width: 6em;
+  padding: 10px;
+  overflow-x: hidden;
+  text-align: center;
+  font-size: 110%;
+  background: #FFB132;
+  box-shadow: 0px 4px 4px rgba(0, 60, 60, 0.15);
+  margin-bottom: 15%;
+  font-weight: bold;
+  opacity:0.99;
+  display: block;
+  transition: .2s;
+}
+
+.StartToday:hover{
+  overflow-x: hidden;
+  transform: scale(1.1);
+}
+
+.UnderStartToday{
+  font-style: normal;
+  overflow-x: hidden;
+  font-weight: normal;
+  font-size: 110%;
+  line-height: 52px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: rgba(17, 65, 55, 0.8);
+  font-weight: bold;
+  opacity: 0.99;
+}

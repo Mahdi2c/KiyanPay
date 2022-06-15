@@ -1,0 +1,181 @@
+/* Calculator */
+.Calculator{
+  padding-bottom: 2%;
+  background-color: #E9F9F6;
+  overflow-x: hidden;
+}
+
+.CalculatorTitle{
+  margin-top: 20%;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 500%;
+  line-height: 52px;
+/* identical to box height */
+  margin-left: 20%;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  color: #266759;
+  width: 50%;
+  margin-bottom: 10%;
+}
+
+.CalculatorText{
+  margin-top: 3%;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 47px;
+  font-size: 110%;
+  margin-left: 20%;
+  letter-spacing: 0.05em;
+  color: #266759;
+  width: 40%;
+  overflow-x: hidden;
+}
+
+.RegisterHere{
+  margin: auto;
+  border: solid 0.2em #FFB132;
+  border-radius: 50px;
+  width: 8em;
+  padding: 10px;
+  text-align: center;
+  font-size: 110%;
+  background: #FFB132;
+  box-shadow: 1px 4px 4px rgba(0, 60, 60, 0.15);
+  font-weight: bold;
+  opacity:0.99;
+  display: block;
+  position: relative;
+  right: 31%;
+  margin-top: 5%;
+  margin-left: 60%;
+  transition: .2s;
+  overflow-x: hidden;
+}
+
+.RegisterHere:hover{
+  transform: scale(1.1);
+  overflow-x: hidden;
+}
+
+.CalculatorImage{
+  height: 700px;
+  width: 700px;
+  opacity: 0.9;
+  margin-top: 15%;
+  position: relative;
+  margin-left: 5%;
+  overflow-x: hidden;
+}
+
+.CalculatorInputs{
+  display: block;
+  border: none;
+  box-shadow: 1px 4px 4px rgba(0, 60, 60, 0.15);
+  margin-bottom: 5%;
+  border-radius: 50px;
+  color: #266759;
+  height: 4%;
+  font-size: 105%;
+  background: #f3ebfc;
+  position: relative;
+  top: -32em;
+  max-height: 2em;
+  left: 5em;
+  padding: 1em;
+  overflow-x: hidden;
+}
+
+.CalculatorInputs:hover{
+  background: #ebdefa;
+}
+
+.CalculateButton{
+  background-color: #FFB132;
+  border-radius: 50px;
+  font-size: 105%;
+  position: relative;
+  border: none;
+  top: -30em;
+  left: 5em;
+  box-shadow: 1px 4px 4px rgba(0, 60, 60, 0.15);
+  padding: 1em;
+}
+
+.CalculateButton:hover{
+  background-color: #e69f2c;
+}
+
+.CalculatorValue{
+  top: -37em;
+  left: 22.5em;
+  position: relative;
+  color: #b07a1c;
+  font-size: 120%;
+  max-height: 2em;
+  font-weight: bold;
+  overflow-x: hidden;
+}
+
+.Cashback{
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+}
+
+.Speech{
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+}
+
+.Smile{
+  width: 100%;
+  max-width: 145px;
+  height: auto;
+}
+
+.wrapper {
+  width:100%;
+  position: relative;
+  z-index: 1000;
+  margin-top: -5%;
+}
+
+.first{
+  width:33.3333333%;
+  float:left;
+  text-align: center;
+  font-size: 120%;
+  background-color: #E9F9F6;
+  padding-bottom: 50px;
+}
+
+.second{
+  width:33.33333333%;
+  float:left;
+  font-size: 120%;
+  text-align: center;
+  background-color: #E9F9F6;
+  padding-bottom: 50px;
+}
+
+.third{
+  width:33.3333333%;
+  float:left;
+  font-size: 120%;
+  text-align: center;
+  background-color: #E9F9F6;
+  padding-bottom: 50px;
+}
+
+.ThreeIconsText{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 120%;
+  line-height: 52px;
+  font-weight: bold;
+  color: #266759;
+  margin: 2em;
+}

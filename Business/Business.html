@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="BusinessRESET.css">
+    <link rel="stylesheet" href="BusinessNAVBAR.css">
+    <link rel="stylesheet" href="BusinessCARD.css">
+    <link rel="stylesheet" href="BusinessAIRPLANEBG.css">
+    <link rel="stylesheet" href="BusinessCALCULATOR.css">
+    <link rel="stylesheet" href="BusinessCUSTOMER.css">
+    <link rel="stylesheet" href="BusinessFOOTER.css">
+    <!-- <link rel="stylesheet" href="NavbarCSS.css"> -->
+    <!-- <script src="NavbarJS.js"></script> -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+
+  </head>
+
+<body>
+  <!-- fix: Nav bar wont close - slider between personal and business buggy on business - calculator broken -->
+
+  <!-- Fixed title -->
+  <div class = "Fixed_Title">
+    <a href = "https://www.kiyanpay.com/"><img src="Logo.png" alt="Kiyanpay" class = "Logo"></a>
+    <div class="navigationbar">
+        <a rel=noopener href="https://www.kiyanpay.com/">Personal</a>
+        <a rel=noopener href="file:///C:/Users/Mahdi/Desktop/Company/Company.html?">Business</a>
+        <div class="animation start-home"></div>
+      </div>
+    &emsp;&emsp;&emsp;
+    <a class = "SquareNavbar1" href = "https://www.kiyanpay.com/about">ABOUT</a>
+    <a class = "SquareNavbar2" href = "https://www.kiyanpay.com/blogs-all">BLOG</a>
+    <a class = "SquareNavbar3" href = "https://support.kiyanpay.com/en/">SUPPORT</a>
+    <a class = "SquareNavbar4" style = "word-spacing: 0em; font-weight: bold;" href = "https://gate.kiyanpay.com/signup">Sign up</a>
+    <div class = "CircleAnimation">
+    <a style = "word-spacing: 0em;" href = "https://gate.kiyanpay.com/login" class = "Circle">LOG IN</a>
+      </div>
+  </div><br><br><br>
+
+  <!-- Airplane part -->
+  <div class ="AirplaneBackground">
+    <br><br><br><br><br><br><br><br>
+    <div>
+
+    <!-- Show company name -->
+    <div class = "BigTitle">At Kiyan Pay, <a style = "font-style: italic; color:#FFF;" id = "Name"></a> matters </div>
+    <script>
+    var CName = localStorage.getItem("CompanyNameStorage");
+    document.getElementById("Name").innerHTML = CName;
+    </script>
+
+    <p class = "UnderBigTitle">Banking for all</p>
+    <a href = "https://gate.kiyanpay.com/signup" class = "StartToday">Start today</a>
+    <p class = "UnderStartToday">Open a bank account in under five minutes today. No fees, no fuss just finance.</p>
+    </div>
+  </div>
+
+    <!-- Card page -->
+  <div style = "margin-top: 5%;">
+      <p class = "CardText CardTextCircle">Here’s your card</p>
+
+  <div class="Container">
+  <div class="flex-child">
+
+    <!-- Card -->
+    <div style = "display: inline;">
+    <img alt="Card" id = "CardImage">
+
+    <!-- CHANGING CARD IMAGE -->
+    <script>
+    var CType = localStorage.getItem("CompanyTypeStorage");
+
+    if (CType == ("Food")){
+      document.getElementById("CardImage").src = "FoodCard.png";
+      //change class
+      document.getElementById("CardImage").className = "FoodCard";
+    }
+
+    if (CType == ("Clothing")){
+      document.getElementById("CardImage").src = "ClothingCard.png";
+      //change class
+      document.getElementById("CardImage").className = "ClothingCard";
+    }
+
+    if (CType == ("Banking")){
+      document.getElementById("CardImage").src = "BankingCard.png";
+      //change class
+      document.getElementById("CardImage").className = "BankingCard";
+    }
+
+    if (CType == ("Health")){
+      document.getElementById("CardImage").src = "HealthCard.png";
+      //change class
+      document.getElementById("CardImage").className = "HealthCard";
+    }
+    </script>
+
+    <!-- SHOW COMPANY NAME ON CARD -->
+    <p id = "CardCompanyName"></p>
+    <script>
+    var CardCompanyName = localStorage.getItem("CompanyNameStorage");
+    document.getElementById("CardCompanyName").innerHTML = CardCompanyName;
+
+    //CHANGE CLASS
+    var CType = localStorage.getItem("CompanyTypeStorage");
+
+    if (CType == ("Food")){
+      document.getElementById("CardCompanyName").className = "FoodCardName";
+    }
+
+    if (CType == ("Clothing")){
+      document.getElementById("CardCompanyName").className = "ClothingCardName";
+    }
+
+    if (CType == ("Banking")){
+      document.getElementById("CardCompanyName").className = "BankingCardName";
+    }
+
+    if (CType == ("Health")){
+      document.getElementById("CardCompanyName").className = "HealthCardName";
+    }
+    </script>
+
+  </div>
+
+  </div>
+
+  <div class="flex-child">
+    <img id = "CompanyImage" class = "Person">
+
+    <!-- Changing image -->
+    <script>
+    var CType = localStorage.getItem("CompanyTypeStorage");
+
+    if (CType == ("Food")){
+      document.getElementById("CompanyImage").src = "Food.jpg";
+      //change class
+      document.getElementById("CompanyImage").className = "Food";
+    }
+
+    if (CType == ("Clothing")){
+      document.getElementById("CompanyImage").src = "Clothing.jpg";
+      //change class
+      document.getElementById("CompanyImage").className = "Clothing";
+    }
+
+    if (CType == ("Banking")){
+      document.getElementById("CompanyImage").src = "Banking.jpg";
+      //change class
+      document.getElementById("CompanyImage").className = "Banking";
+    }
+
+    if (CType == ("Health")){
+      document.getElementById("CompanyImage").src = "Health.jpg";
+      //change class
+      document.getElementById("CompanyImage").className = "Health";
+    }
+    </script>
+
+    <div class = "TextBox">We understand that running a <p style="text-transform: lowercase; display: inline;"id = "CardCompanyType"></p> business is hard. Thats why we're committed to breaking down borders. That's why transferring with us is easy, fast and reliable. We are 9x cheaper than high street banks and transfers are processed in a matter of minutes. Did we mention we have over 30 currencies?</p>
+    </div>
+    <!-- SHOW COMPANY NAME ON CARD -->
+    <script>
+    var CardCompanyType = localStorage.getItem("CompanyTypeStorage");
+    document.getElementById("CardCompanyType").innerHTML = CardCompanyType;
+    </script>
+
+  </div>
+  </div>
+
+  <!-- 4 logos -->
+  <div style = "text-align: center; margin-top: -5%; margin-bottom: 2%;">
+  <a href="https://www.amazon.co.uk/"><img src="Amazon.png" class = "Amazon"></a>
+  <a href="https://www.ebay.co.uk/"><img src="Ebay.png" class = "Ebay"></a>
+  <a href="https://www.microsoft.com/en-gb"><img src="Microsoft.png" class = "Microsoft"></a>
+  <a href="https://www.pinterest.co.uk/"><img src="Pinterest.png" class = "Pinterest"></a>
+  </div>
+  </div>
+
+    <!-- Calculator -->
+    <div class = "Calculator">
+
+      <div class="Container">
+      <div class="flex-child">
+        <p class = "CalculatorTitle">What is our price?</p>
+        <p class = "CalculatorText">While we’re making sure that your money stays in your account you might have different ideas! That’s why we’ve made money transfers easier and faster than ever. Send money to those that matter to you in just a few clicks.</p>
+        <a href = "https://gate.kiyanpay.com/signup" class = "RegisterHere">Register here</a>
+      </div>
+
+      <div class="flex-child">
+        <img src="Calculator.jpg" class = "CalculatorImage disabled">
+        <input type="text" class = "CalculatorInputs" placeholder="Company size">
+        <input type="text" class = "CalculatorInputs" placeholder="Transfer scale">
+        <p class = "CalculatorValue">Value:</p>
+        <input type="button" class = "CalculateButton" value="Calculate">
+
+      </div>
+      </div>
+    </div>
+
+    <!-- 3 Icons -->
+    <div class ="wrapper">
+
+      <div class ="first">
+          <img src="Cashback.png" class = "Cashback disabled">
+          <p class = "ThreeIconsText">Pay People & Employees</p>
+        </div>
+
+          <div class="second">
+            <img src="Comment.png" class = "Speech disabled">
+            <p class = "ThreeIconsText">Get real time notifications</p>
+          </div>
+
+            <div class="third">
+              <img src="Smile.png" class = "Smile disabled">
+              <p class = "ThreeIconsText">Keep Suppliers Happy</p>
+              </div>
+            </div>
+    </div>
+    <!-- Customers section -->
+    <div>
+      <p class = "CustomerTitle">Helping you understand your customers</p>
+    </div>
+
+    <div class="Container">
+      <div class="flex-child">
+        <img src="Graph.jpg" class = "GraphImg">
+        <p class = "GraphTxt">We’re here for small business. We support upstarts, growth-focused start-ups and brick-and-mortar shops. Why? Because you matter and we care.</p>
+      </div>
+
+    <div class="flex-child">
+      <p class = "GraphSecondTxt">We promised you transparency so here it is! Costs are low and disclosed upfront so you don’t have to worry about hidden fees or evil bankers taking your hard-earned money.</p>
+      <a href = "https://www.kiyanpay.com/about"class = "LearnMore">Learn more    ></a>
+    </div>
+
+    </div>
+    <br><br><br><br><br><br><br>
+
+    <!-- Site footer -->
+
+    <footer style = "margin-top: -10%;" class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-md-3">
+            <h6></h6>
+            <p class="text-justify">
+            <img src="https://i.ibb.co/hYjcvZN/fraud2.png" alt="" />
+            <img src="https://i.ibb.co/KjB1W49/innovatefinance-copy.png" alt="" />
+            </p>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <div class="title-footer"><h6>ABOUT US</h6></div>
+            <ul class="footer-links">
+              <li>Who We Are</li>
+              <li>Blog</li>
+              <li>Careers</li>
+
+            </ul>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <div class="title-footer"><h6>Quick Links</h6></div>
+            <ul class="footer-links">
+              <li>Fraud Protection</li>
+              <li>Privacy Policy</li>
+              <li>Terms and Conditions</li>
+            </ul>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <div class="title-footer"><h6>Address</h6></div>
+            <ul class="footer-links">
+              <li>40 Gracechurch Street</li>
+              <li>EC3V 0BT</li>
+              <li>London, UK</li>
+            </ul><br>
+          </div>
+        </div>
+        <hr>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-10 col-sm-6 col-xs-12"><br>
+            <p class="copyright-text">Kiyanpay is registered by the Financial Conduct Authority under electronic money transfer and payment services Ref No: 814005 and is licensed and regulated by HMRC as a Money Service Business (MSB - license no. XRML00000131603). Kiyanpay is not a bank, the Kiyanpay account is an e-money account. <br><br><br>
+            </p>
+          </div>
+
+          <div class="col-md-2 col-sm-6 col-xs-12">
+            <ul class="social-icons"><br>
+              <li><a rel=noopener class="facebook" href="https://www.facebook.com/kiyanpayltd"><i class="fa fa-facebook"></i></a></li>
+              <li><a rel=noopener class="twitter" href="https://twitter.com/kiyanpay"><i class="fa fa-twitter"></i></a></li>
+              <li><a rel=noopener class="instagram" href="https://www.instagram.com/kiyanpay/"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
+</body>
+</html>

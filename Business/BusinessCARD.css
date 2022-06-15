@@ -1,0 +1,182 @@
+/* Business card */
+.CardText{
+  font-weight: bold;
+  float:left;
+  padding-left: 20%;
+  font-style: normal;
+  font-weight: bolder;
+  font-size: 200%;
+  line-height: 123px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #3B4140;
+}
+
+.CardTextCircle{
+  height: 60px;
+  width: 300px;
+  line-height: 60px;
+  margin-left: -20%;
+  position: relative;
+  left:10%;
+  border-radius: 30px;
+  background-color: #FFB132;
+  margin-bottom: 5%;
+  opacity: 95%;
+  box-shadow: 0px 4px 4px rgba(0, 60, 60, 0.15);
+}
+
+.Container{
+    display: flex;
+}
+
+.flex-child {
+    flex: 1;
+}
+
+.flex-child:first-child {
+    margin-right: -50px;
+}
+
+.TextBox{
+ border: solid 2px #FFB132;
+ box-shadow: 1px 4px 4px rgba(0, 60, 60, 0.15);
+ border-radius: 30px;
+ padding: 35px;
+ width: 50%;
+ background: white;
+ opacity: 0.9;
+ position: relative;
+ bottom: 6em;
+ left: 8em;
+}
+
+.Amazon{
+  width: 85px;
+  height: 85px;
+  padding: 70px;
+}
+
+.Ebay{
+  width: 170px;
+  height: 80px;
+  padding: 70px;
+}
+
+.Microsoft{
+  width: 360px;
+  height: 70px;
+  padding: 70px;
+}
+
+.Pinterest{
+  width: 105px;
+  height: 105px;
+  padding: 70px;
+}
+
+.Food{
+  width: 100%;
+  max-width: 400px;
+  margin-left: 14%;
+  height: auto;
+}
+
+.Clothing{
+  width: 100%;
+  max-width: 400px;
+  margin-left: 14%;
+  height: auto;
+}
+
+.Banking{
+  width: 100%;
+  max-width: 650px;
+  height: auto;
+}
+
+.Health{
+  width: 100%;
+  max-width: 550px;
+  height: auto;
+}
+
+.FoodCardName{
+  position: relative;
+  bottom: 6.5em;
+  left: 10em;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #6b2924;
+  font-size: 1vw;
+}
+
+.FoodCard{
+  width: 100%;
+  max-width: 570px;
+  height: auto;
+  position: relative;
+  top: 5em;
+  pointer-events: none;
+  right: 5em;
+}
+
+.ClothingCard{
+  width: 100%;
+  max-width: 570px;
+  height: auto;
+  position: relative;
+  top: 5em;
+  pointer-events: none;
+  right: 5em;
+}
+
+.ClothingCardName{
+  position: relative;
+  bottom: 7.3em;
+  left: 15.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #6b2924;
+  font-size: 1vw;
+}
+
+.BankingCard{
+  width: 100%;
+  max-width: 720px;
+  height: auto;
+  position: relative;
+  top: 2em;
+  pointer-events: none;
+  right: 10em;
+}
+
+.BankingCardName{
+  position: relative;
+  bottom: 4.5em;
+  left: 7.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #6b2924;
+  font-size: 1.5vw;
+}
+
+.HealthCard{
+  width: 100%;
+  max-width: 620px;
+  height: auto;
+  position: relative;
+  top: 2em;
+  pointer-events: none;
+  right: 10em;
+}
+
+.HealthCardName{
+  position: relative;
+  bottom: 11em;
+  left: 7em;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #c7c6c1;
+  font-size: 1.5vw;
+}
